@@ -1,0 +1,100 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#monpremiercanvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  background-color: white;
+}
+body {
+  height: 100vh;
+}
+.main {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  width: 100%;
+  height: max;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+h1 {
+  position: absolute;
+  left: 300px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+nav div ul {
+  position: absolute;
+  width: 100%;
+  height: max;
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 300px;
+}
+nav ul li {
+  mix-blend-mode: difference;
+  color: white;
+  margin: 0 20px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+h2 {
+  position: relative;
+  top: 100px;
+  left: 300px;
+  width: 850px;
+  mix-blend-mode: difference;
+  color: white;
+  font-size: 90px;
+  position: relative;
+}
+
+.contact h3,
+ul li {
+  mix-blend-mode: difference;
+  color: white;
+}
+h3 {
+  margin-left: 20px;
+}
+.contact {
+  position: absolute;
+
+  right: 300px;
+  width: fit-content;
+  margin-top: 30px;
+}
+.contenaire-contact {
+  display: flex;
+}
+.contact ul {
+  display: inline-block;
+  margin: 10px;
+}
+.contact ul li {
+  list-style: none;
+  margin: 10px;
+}

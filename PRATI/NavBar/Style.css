@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #333;
+    height: 100vh;
+}
+nav{
+    background-color: white;
+}
+ul{
+   
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 30px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    
+}
+nav ul li:hover{
+   
+    animation: animation 100ms forwards;
+
+}
+
+@keyframes animation {
+    0%{
+        
+        border-bottom: 0px solid lightblue;
+       
+    }
+    50%{
+    
+        border-bottom: 2px solid lightblue;
+    }
+    100%{
+        border-bottom: 5px solid lightblue;
+        
+    }
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(48, 48, 48, 0.719);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.spinner{
+    background-color: crimson;
+    width: 100px;
+    height: 100px;
+    margin: 20vh auto;
+    border-radius: 30px;
+
+    animation: spin 1s infinite ease-out;
+
+
+}
+
+.spinner:hover{
+    animation: spin 1s infinite ease-in-out;
+
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0);
+        border-radius:50%;
+    }
+    50%{
+
+        border-radius:50%;
+        box-shadow: 0 0 400px 10px rgba(141, 33, 33, 0.418);
+        background-color: lightcoral;
+    }
+
+    100%{
+    
+        transform: rotate(180deg);
+        border-radius:50%;
+    }
+}
+
+.spinner1{
+    width: calc(50%);
+    background-color: rgb(255, 0, 0);
+    height: 40px;
+    border-radius: 40px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    animation: ColorAnnimation1 1s infinite;
+}
+
+.LeftLigth , .RigthLigth{
+    display: inline-block;
+    width: 50%;
+    
+}
+
+.LeftLigth{
+    background-color: blue;
+    border-radius: 40px 0 0 40px;
+    height: 100%;
+    z-index: 2;
+
+    animation: ColorAnnimation2 1s ease-in infinite;
+} 
+
+@keyframes ColorAnnimation1 {
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: blue;
+    }
+
+    100%{
+        background-color: red;
+    }
+}
+@keyframes ColorAnnimation2 {
+    0%{
+        background-color: blue;
+    }
+    50%{
+        background-color: red;
+    }
+
+    100%{
+        background-color: blue;
+    }
+}

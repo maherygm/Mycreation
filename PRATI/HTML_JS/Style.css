@@ -1,0 +1,56 @@
+* ,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #333;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    margin: 200px auto;
+    position: relative;
+}
+.countainer{
+    width: 50px;
+    height: 30px;
+    padding: 60px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.LIGNES{
+    width: 100%;
+    height: 5px;
+    background-color: #f1F1F1;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+.LIGNES:nth-child(1){
+    top: 0px;
+}
+.LIGNES:nth-child(2){
+    top: 50%;
+}
+.LIGNES:nth-child(3){
+    top: 100%;
+}
+
+.countainer.active :nth-child(1){
+    top: 50%;
+    transform: rotate(130deg);
+}
+.countainer.active :nth-child(2){
+    opacity: 0;
+    transform: translate(-30px);
+}
+.countainer.active :nth-child(3){
+    top: 50%;
+    transform: rotate(-130deg);
+}
